@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Instalar Rundeck
+      apt:
+        name: rundeck
+        state: present
